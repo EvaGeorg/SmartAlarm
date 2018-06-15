@@ -25,5 +25,10 @@ namespace AlarmClock
         {
             alarms.Remove(a);
         }
+
+        public List<Alarm> GetAlarms()
+        {
+            return alarms;
+        }
     }
 }

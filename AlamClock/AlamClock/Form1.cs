@@ -166,5 +166,47 @@ namespace AlarmClock
 
 
         }
+
+        private void fillAlarms()
+        {
+            List<Alarm> openAlarms = alarmDoc.GetAlarms();
+            foreach( Alarm a in openAlarms)
+            {
+                lbAlarms.Items.Add(a);
+            }
+        }
+
+        private void btnOpen_Click(object sender, EventArgs e)
+        {
+            if (fileName == null)
+            {
+                OpenFileDialog dialog = new OpenFileDialog();
+                dialog.Filter = "Alams| *.al";
+                dialog.Title = "Open your saved alarms";
+
+                if (dialog.ShowDialog() == DialogResult.OK)
+                {
+                    fileName = dialog.FileName;
+                }
+            }
+
+            try
+            {
+                using (FileStream stream = new FileStream(fileName, FileMode.Open))
+                {
+                    var formatter = new BinaryFormatter();
+                    alarmDoc = (AlarmDoc)formatter.Deserialize(stream);
+                    fillAlarms();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error while opening the file");
+            }
+            fileName = null;
+
+        }
+        
+      
     }
 }
