@@ -161,7 +161,7 @@ namespace AlarmClock
         public void setSong()
         {
             if (Ringtone == "Lalala")
-                player = new SoundPlayer(Resources.lalala);
+                player = new SoundPlayer();
             else if (Ringtone == "Highway to Hell")
                 player = new SoundPlayer(Resources.highwayToHell);
             else if (Ringtone == "The Trooper")

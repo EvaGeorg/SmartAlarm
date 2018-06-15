@@ -206,10 +206,10 @@
             this.lbAlarms.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lbAlarms.FormattingEnabled = true;
             this.lbAlarms.ItemHeight = 20;
-            this.lbAlarms.Location = new System.Drawing.Point(558, 183);
+            this.lbAlarms.Location = new System.Drawing.Point(548, 195);
             this.lbAlarms.Name = "lbAlarms";
             this.lbAlarms.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.lbAlarms.Size = new System.Drawing.Size(310, 184);
+            this.lbAlarms.Size = new System.Drawing.Size(320, 184);
             this.lbAlarms.TabIndex = 10;
             this.lbAlarms.SelectedIndexChanged += new System.EventHandler(this.lbAlarms_SelectedIndexChanged);
             // 
@@ -358,7 +358,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.75F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label8.Location = new System.Drawing.Point(545, 167);
+            this.label8.Location = new System.Drawing.Point(545, 179);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(327, 13);
             this.label8.TabIndex = 22;

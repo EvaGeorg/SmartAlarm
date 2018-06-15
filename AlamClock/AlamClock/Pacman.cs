@@ -24,12 +24,10 @@ namespace AlarmClock
         Image foodImage;
         bool[][] foodWorld;
 
-        public object Resouces { get; }
-
         public Pacman()
         {
             InitializeComponent();
-            foodImage = Resouces.food_alarm;
+            foodImage = Resources.food_alarm;
             newGame();
         }
 
@@ -80,7 +78,7 @@ namespace AlarmClock
             pacman.Draw(g);
             graphics.DrawImageUnscaled(doubleBuffer, 0, 0);
             if (allEaten) {
-                DialogResult.OK;
+                DialogResult = DialogResult.OK;
                 this.Close(); }
         }
 

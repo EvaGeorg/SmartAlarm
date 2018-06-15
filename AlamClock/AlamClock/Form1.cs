@@ -43,8 +43,9 @@ namespace AlarmClock
             String song = "Lalala"; // default value
             if (lbSongs.SelectedItem != null)
                 song = lbSongs.SelectedItem as String;
-            int game;
-            //blabaa
+
+            int game = 0;   // if game is 0 means no game is played
+
             if (maze.Checked) game = 1;
             else if (shuffle.Checked) game = 2;
             else if (quiz.Checked) game = 3;
