@@ -44,7 +44,7 @@ namespace AlarmClock
             if (lbSongs.SelectedItem != null)
                 song = lbSongs.SelectedItem as String;
             int game;
-
+            //blabaa
             if (maze.Checked) game = 1;
             else if (shuffle.Checked) game = 2;
             else if (quiz.Checked) game = 3;
