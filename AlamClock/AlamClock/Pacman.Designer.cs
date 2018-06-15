@@ -30,13 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // Packman
+            // Pacman
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(459, 300);
-            this.Name = "Packman";
+            this.Name = "Pacman";
             this.Text = "Packman";
+            this.Load += new System.EventHandler(this.Pacman_Load);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Packman_KeyUp);
             this.ResumeLayout(false);
 
