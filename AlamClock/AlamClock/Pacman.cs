@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AlarmClock.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using AlarmClock.Properties;
+
 
 namespace AlarmClock
 {
@@ -27,7 +28,7 @@ namespace AlarmClock
         public Pacman()
         {
             InitializeComponent();
-            foodImage = Resources.food_alarm;
+            foodImage = Resources.food;
             newGame();
         }
 
@@ -102,6 +103,11 @@ namespace AlarmClock
             {
                 pacman.ChangeDirection(PacmanCircle.DIRECTION.LEFT);
             }
+        }
+
+        private void Pacman_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
