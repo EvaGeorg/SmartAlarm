@@ -124,6 +124,20 @@ namespace AlarmClock
                 }
 
             }
+            else if(Game == 4)
+            {
+                AlarmOn = true;
+                player.Play();
+
+                Pacman packman = new Pacman();
+
+                if (packman.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    AlarmOn = false;
+                    player.Stop();
+                    Done = true;
+                }
+            }
         }
 
         public override string ToString()

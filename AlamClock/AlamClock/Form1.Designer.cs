@@ -56,6 +56,7 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.btnOpen = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.eat = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.upDownMinutes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.upDownHours)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.upDownSnooze)).BeginInit();
@@ -255,7 +256,7 @@
             this.maze.BackColor = System.Drawing.Color.Transparent;
             this.maze.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maze.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.maze.Location = new System.Drawing.Point(159, 408);
+            this.maze.Location = new System.Drawing.Point(159, 396);
             this.maze.Name = "maze";
             this.maze.Size = new System.Drawing.Size(123, 24);
             this.maze.TabIndex = 14;
@@ -269,7 +270,7 @@
             this.quiz.BackColor = System.Drawing.Color.Transparent;
             this.quiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quiz.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.quiz.Location = new System.Drawing.Point(423, 409);
+            this.quiz.Location = new System.Drawing.Point(333, 396);
             this.quiz.Name = "quiz";
             this.quiz.Size = new System.Drawing.Size(116, 24);
             this.quiz.TabIndex = 15;
@@ -283,7 +284,7 @@
             this.shuffle.BackColor = System.Drawing.Color.Transparent;
             this.shuffle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.shuffle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.shuffle.Location = new System.Drawing.Point(279, 408);
+            this.shuffle.Location = new System.Drawing.Point(159, 426);
             this.shuffle.Name = "shuffle";
             this.shuffle.Size = new System.Drawing.Size(138, 24);
             this.shuffle.TabIndex = 16;
@@ -389,6 +390,20 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // eat
+            // 
+            this.eat.AutoSize = true;
+            this.eat.BackColor = System.Drawing.Color.Transparent;
+            this.eat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.eat.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.eat.Location = new System.Drawing.Point(333, 426);
+            this.eat.Name = "eat";
+            this.eat.Size = new System.Drawing.Size(141, 24);
+            this.eat.TabIndex = 25;
+            this.eat.TabStop = true;
+            this.eat.Text = "Eat the clocks";
+            this.eat.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -396,6 +411,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(882, 456);
+            this.Controls.Add(this.eat);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnOpen);
             this.Controls.Add(this.label8);
@@ -459,6 +475,7 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button btnOpen;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.RadioButton eat;
     }
 }
 

@@ -48,7 +48,7 @@ namespace AlarmClock
             if (maze.Checked) game = 1;
             else if (shuffle.Checked) game = 2;
             else if (quiz.Checked) game = 3;
-            else game = 0;
+            else if (eat.Checked) game = 4;
 
             Alarm a = new Alarm(date, time, (int)upDownSnooze.Value, (int)upDownTimes.Value, song, game);
             lbAlarms.Items.Add(a);
