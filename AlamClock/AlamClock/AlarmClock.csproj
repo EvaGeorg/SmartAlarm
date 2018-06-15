@@ -61,17 +61,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Alarm.cs" />
+    <Compile Include="AlarmDoc.cs" />
     <Compile Include="AnswerQuestion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AnswerQuestion.Designer.cs">
       <DependentUpon>AnswerQuestion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ChangeAlarm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChangeAlarm.Designer.cs">
-      <DependentUpon>ChangeAlarm.cs</DependentUpon>
     </Compile>
     <Compile Include="Difficulty.cs">
       <SubType>Form</SubType>
@@ -109,6 +104,13 @@
     <Compile Include="Maze.Designer.cs">
       <DependentUpon>Maze.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pacman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pacman.Designer.cs">
+      <DependentUpon>Pacman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PacmanCircle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quiz.cs">
@@ -138,9 +140,6 @@
     <EmbeddedResource Include="AnswerQuestion.resx">
       <DependentUpon>AnswerQuestion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChangeAlarm.resx">
-      <DependentUpon>ChangeAlarm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Difficulty.resx">
       <DependentUpon>Difficulty.cs</DependentUpon>
     </EmbeddedResource>
@@ -159,16 +158,13 @@
     <EmbeddedResource Include="Maze.resx">
       <DependentUpon>Maze.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pacman.resx">
+      <DependentUpon>Pacman.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Quiz.resx">
       <DependentUpon>Quiz.cs</DependentUpon>
     </EmbeddedResource>
@@ -247,10 +243,7 @@
     <None Include="Resources\The Damned - Neat Neat Neat  New Rose %28Peel session 301176%29.wav" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\backgroundForm101.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\alarmLogo.ico" />
+    <None Include="Resources\food_alarm.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

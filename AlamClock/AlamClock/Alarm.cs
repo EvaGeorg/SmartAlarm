@@ -9,6 +9,7 @@ using System.Globalization;
 
 namespace AlarmClock
 {
+    [Serializable]
     public class Alarm
     {
         public String Date { set; get; }
@@ -78,10 +79,6 @@ namespace AlarmClock
 
         public void start()
         {
-            if(Game == 0)
-            {
-                
-            }
 
             if (Game == 1)
             {
@@ -126,6 +123,20 @@ namespace AlarmClock
                     Done = true;
                 }
 
+            }
+            else if(Game == 4)
+            {
+                AlarmOn = true;
+                player.Play();
+
+                Pacman packman = new Pacman();
+
+                if (packman.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    AlarmOn = false;
+                    player.Stop();
+                    Done = true;
+                }
             }
         }
 

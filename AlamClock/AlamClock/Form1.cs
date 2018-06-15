@@ -4,7 +4,9 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Globalization;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,9 +17,13 @@ namespace AlarmClock
     public partial class Form1 : Form
     {
 
+        private String fileName;
+        private AlarmDoc alarmDoc;
         public Form1()
-        {
+        {   
             InitializeComponent();
+            fileName = null;
+            alarmDoc = new AlarmDoc();
             timer1 = new Timer();
             DatePicker.Value = DateTime.Now;
             timer1.Start();
@@ -38,15 +44,15 @@ namespace AlarmClock
             if (lbSongs.SelectedItem != null)
                 song = lbSongs.SelectedItem as String;
             int game;
-
+            //blabaa
             if (maze.Checked) game = 1;
             else if (shuffle.Checked) game = 2;
             else if (quiz.Checked) game = 3;
-            else game = 0;
+            else if (eat.Checked) game = 4;
 
             Alarm a = new Alarm(date, time, (int)upDownSnooze.Value, (int)upDownTimes.Value, song, game);
             lbAlarms.Items.Add(a);
-
+            alarmDoc.AddAlarm(a);
         }
         private void btnSetAlarm_Click(object sender, EventArgs e)
         {
@@ -125,13 +131,82 @@ namespace AlarmClock
             if (selected != null) {
                 setAlarm();
                 lbAlarms.Items.Remove(selected);
+                alarmDoc.RemoveAlarm(selected);
             }
 
         }
 
-        private void DatePicker_ValueChanged(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
+            if (fileName == null)
+            {
+                SaveFileDialog dialog = new SaveFileDialog();
+                dialog.Filter = "Alams| *.al";
+                dialog.Title = "Save your created alarms";
+
+                if (dialog.ShowDialog() == DialogResult.OK)
+                {
+                    fileName = dialog.FileName;
+                }
+            }
+
+            try
+            {
+                using (FileStream stream = new FileStream(fileName, FileMode.Create))
+                {
+                    var formatter = new BinaryFormatter();
+                    formatter.Serialize(stream, (AlarmDoc) alarmDoc);
+                    fileName = null;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error while saving the file");
+            }
+
 
         }
+
+        private void fillAlarms()
+        {
+            List<Alarm> openAlarms = alarmDoc.GetAlarms();
+            foreach( Alarm a in openAlarms)
+            {
+                lbAlarms.Items.Add(a);
+            }
+        }
+
+        private void btnOpen_Click(object sender, EventArgs e)
+        {
+            if (fileName == null)
+            {
+                OpenFileDialog dialog = new OpenFileDialog();
+                dialog.Filter = "Alams| *.al";
+                dialog.Title = "Open your saved alarms";
+
+                if (dialog.ShowDialog() == DialogResult.OK)
+                {
+                    fileName = dialog.FileName;
+                }
+            }
+
+            try
+            {
+                using (FileStream stream = new FileStream(fileName, FileMode.Open))
+                {
+                    var formatter = new BinaryFormatter();
+                    alarmDoc = (AlarmDoc)formatter.Deserialize(stream);
+                    fillAlarms();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error while opening the file");
+            }
+            fileName = null;
+
+        }
+        
+      
     }
 }
