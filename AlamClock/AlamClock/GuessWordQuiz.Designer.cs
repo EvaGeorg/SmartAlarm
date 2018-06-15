@@ -38,10 +38,10 @@
             // wordQuessMorning
             // 
             this.wordQuessMorning.AutoSize = true;
-            this.wordQuessMorning.BackColor = System.Drawing.Color.Transparent;
+            this.wordQuessMorning.BackColor = System.Drawing.Color.White;
             this.wordQuessMorning.Font = new System.Drawing.Font("Bahnschrift SemiBold", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wordQuessMorning.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.wordQuessMorning.Location = new System.Drawing.Point(129, 78);
+            this.wordQuessMorning.ForeColor = System.Drawing.Color.Teal;
+            this.wordQuessMorning.Location = new System.Drawing.Point(190, 80);
             this.wordQuessMorning.Name = "wordQuessMorning";
             this.wordQuessMorning.Size = new System.Drawing.Size(121, 48);
             this.wordQuessMorning.TabIndex = 0;
@@ -50,20 +50,21 @@
             // wordGuess
             // 
             this.wordGuess.BackColor = System.Drawing.Color.White;
-            this.wordGuess.Font = new System.Drawing.Font("Tempus Sans ITC", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wordGuess.Location = new System.Drawing.Point(74, 179);
+            this.wordGuess.Font = new System.Drawing.Font("Bahnschrift SemiBold", 30F, System.Drawing.FontStyle.Bold);
+            this.wordGuess.ForeColor = System.Drawing.Color.Teal;
+            this.wordGuess.Location = new System.Drawing.Point(68, 167);
             this.wordGuess.Name = "wordGuess";
-            this.wordGuess.Size = new System.Drawing.Size(221, 48);
+            this.wordGuess.Size = new System.Drawing.Size(221, 56);
             this.wordGuess.TabIndex = 1;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Tomato;
             this.button1.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(335, 179);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(335, 167);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 48);
+            this.button1.Size = new System.Drawing.Size(75, 56);
             this.button1.TabIndex = 2;
             this.button1.Text = "OK";
             this.button1.UseVisualStyleBackColor = false;

@@ -69,7 +69,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Bahnschrift SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(197, 43);
             this.label4.Name = "label4";
@@ -101,10 +101,10 @@
             // resultUser
             // 
             this.resultUser.BackColor = System.Drawing.Color.White;
-            this.resultUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resultUser.Font = new System.Drawing.Font("Bahnschrift SemiBold", 18F, System.Drawing.FontStyle.Bold);
             this.resultUser.Location = new System.Drawing.Point(12, 166);
             this.resultUser.Name = "resultUser";
-            this.resultUser.Size = new System.Drawing.Size(168, 29);
+            this.resultUser.Size = new System.Drawing.Size(168, 36);
             this.resultUser.TabIndex = 7;
             // 
             // okBtn
@@ -112,9 +112,9 @@
             this.okBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.okBtn.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.okBtn.ForeColor = System.Drawing.Color.White;
-            this.okBtn.Location = new System.Drawing.Point(201, 161);
+            this.okBtn.Location = new System.Drawing.Point(202, 166);
             this.okBtn.Name = "okBtn";
-            this.okBtn.Size = new System.Drawing.Size(66, 40);
+            this.okBtn.Size = new System.Drawing.Size(66, 36);
             this.okBtn.TabIndex = 8;
             this.okBtn.Text = "OK";
             this.okBtn.UseVisualStyleBackColor = false;

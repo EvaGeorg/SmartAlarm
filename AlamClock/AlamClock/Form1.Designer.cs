@@ -208,7 +208,7 @@
             this.lbAlarms.ItemHeight = 20;
             this.lbAlarms.Location = new System.Drawing.Point(548, 195);
             this.lbAlarms.Name = "lbAlarms";
-            this.lbAlarms.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.lbAlarms.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.lbAlarms.Size = new System.Drawing.Size(320, 184);
             this.lbAlarms.TabIndex = 10;
             this.lbAlarms.SelectedIndexChanged += new System.EventHandler(this.lbAlarms_SelectedIndexChanged);

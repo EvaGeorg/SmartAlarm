@@ -38,9 +38,9 @@
             // 
             this.guessBtn.BackColor = System.Drawing.Color.Transparent;
             this.guessBtn.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guessBtn.Location = new System.Drawing.Point(12, 128);
+            this.guessBtn.Location = new System.Drawing.Point(12, 129);
             this.guessBtn.Name = "guessBtn";
-            this.guessBtn.Size = new System.Drawing.Size(346, 34);
+            this.guessBtn.Size = new System.Drawing.Size(346, 45);
             this.guessBtn.TabIndex = 2;
             this.guessBtn.Text = "Guess";
             this.guessBtn.UseVisualStyleBackColor = false;
@@ -58,10 +58,11 @@
             // guessBox
             // 
             this.guessBox.BackColor = System.Drawing.Color.White;
-            this.guessBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guessBox.Font = new System.Drawing.Font("Bahnschrift SemiBold", 21F, System.Drawing.FontStyle.Bold);
+            this.guessBox.ForeColor = System.Drawing.Color.Teal;
             this.guessBox.Location = new System.Drawing.Point(12, 71);
             this.guessBox.Name = "guessBox";
-            this.guessBox.Size = new System.Drawing.Size(346, 29);
+            this.guessBox.Size = new System.Drawing.Size(346, 41);
             this.guessBox.TabIndex = 4;
             // 
             // GuessNumberQuiz
@@ -70,7 +71,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(372, 186);
+            this.ClientSize = new System.Drawing.Size(372, 193);
             this.Controls.Add(this.guessBox);
             this.Controls.Add(this.guessLabel);
             this.Controls.Add(this.guessBtn);

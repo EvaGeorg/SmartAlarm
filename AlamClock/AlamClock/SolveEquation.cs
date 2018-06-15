@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace AlarmClock
 {
+    [Serializable]
     public partial class SolveEquation : Form
     {
         public int Result { get; set; }
@@ -77,6 +78,8 @@ namespace AlarmClock
             }
             if(o == 3)
             {
+                while (n2 == 0) n2 = random.Next();
+
                 if (n1 % n2 != 0)
                 {
                     int c = n1 % n2;

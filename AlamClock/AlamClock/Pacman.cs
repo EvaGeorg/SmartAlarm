@@ -28,6 +28,7 @@ namespace AlarmClock
         public Pacman()
         {
             InitializeComponent();
+            this.ControlBox = false;
             foodImage = Resources.food;
             newGame();
         }

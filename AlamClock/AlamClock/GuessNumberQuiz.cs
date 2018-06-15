@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace AlarmClock
 {
+    [Serializable]
     public partial class GuessNumberQuiz : Form
     {
         public int Number { get; set; }

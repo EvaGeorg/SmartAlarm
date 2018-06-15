@@ -40,9 +40,9 @@
             // firstQ
             // 
             this.firstQ.AutoSize = true;
-            this.firstQ.BackColor = System.Drawing.Color.Transparent;
+            this.firstQ.BackColor = System.Drawing.Color.White;
             this.firstQ.Font = new System.Drawing.Font("Bahnschrift SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.firstQ.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.firstQ.ForeColor = System.Drawing.Color.Teal;
             this.firstQ.Location = new System.Drawing.Point(10, 71);
             this.firstQ.Name = "firstQ";
             this.firstQ.Size = new System.Drawing.Size(74, 29);
@@ -64,9 +64,9 @@
             // secondQ
             // 
             this.secondQ.AutoSize = true;
-            this.secondQ.BackColor = System.Drawing.Color.Transparent;
+            this.secondQ.BackColor = System.Drawing.Color.White;
             this.secondQ.Font = new System.Drawing.Font("Bahnschrift SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.secondQ.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.secondQ.ForeColor = System.Drawing.Color.Teal;
             this.secondQ.Location = new System.Drawing.Point(10, 142);
             this.secondQ.Name = "secondQ";
             this.secondQ.Size = new System.Drawing.Size(79, 29);
@@ -76,19 +76,21 @@
             // answer1
             // 
             this.answer1.BackColor = System.Drawing.Color.White;
-            this.answer1.Font = new System.Drawing.Font("Tempus Sans ITC", 17.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.answer1.Font = new System.Drawing.Font("Bahnschrift SemiBold", 18F, System.Drawing.FontStyle.Bold);
+            this.answer1.ForeColor = System.Drawing.Color.Teal;
             this.answer1.Location = new System.Drawing.Point(753, 68);
             this.answer1.Name = "answer1";
-            this.answer1.Size = new System.Drawing.Size(133, 38);
+            this.answer1.Size = new System.Drawing.Size(133, 36);
             this.answer1.TabIndex = 3;
             // 
             // answer2
             // 
             this.answer2.BackColor = System.Drawing.Color.White;
-            this.answer2.Font = new System.Drawing.Font("Tempus Sans ITC", 17.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.answer2.Font = new System.Drawing.Font("Bahnschrift SemiBold", 18F, System.Drawing.FontStyle.Bold);
+            this.answer2.ForeColor = System.Drawing.Color.Teal;
             this.answer2.Location = new System.Drawing.Point(753, 139);
             this.answer2.Name = "answer2";
-            this.answer2.Size = new System.Drawing.Size(133, 38);
+            this.answer2.Size = new System.Drawing.Size(133, 36);
             this.answer2.TabIndex = 4;
             // 
             // btnOK

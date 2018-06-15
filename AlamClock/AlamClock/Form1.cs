@@ -108,7 +108,10 @@ namespace AlarmClock
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
-            lbAlarms.Items.Remove(lbAlarms.SelectedItem);
+            for(int i=0; i<lbAlarms.Items.Count; i++)
+            {
+                lbAlarms.Items.Remove(lbAlarms.SelectedItem);
+            }
         }
 
         private void lbAlarms_SelectedIndexChanged(object sender, EventArgs e)

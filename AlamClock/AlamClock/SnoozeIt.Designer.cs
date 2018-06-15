@@ -56,7 +56,7 @@
             this.snooze.Name = "snooze";
             this.snooze.Size = new System.Drawing.Size(120, 64);
             this.snooze.TabIndex = 1;
-            this.snooze.Text = "Snooze!";
+            this.snooze.Text = "Snooze";
             this.snooze.UseVisualStyleBackColor = false;
             this.snooze.Click += new System.EventHandler(this.snooze_Click);
             // 

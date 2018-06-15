@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace AlarmClock
 {
+    [Serializable]
     public partial class SnoozeIt : Form
     {
         public SnoozeIt()
