@@ -4,7 +4,9 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Globalization;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,9 +17,13 @@ namespace AlarmClock
     public partial class Form1 : Form
     {
 
+        private String fileName;
+        private AlarmDoc alarmDoc;
         public Form1()
-        {
+        {   
             InitializeComponent();
+            fileName = null;
+            alarmDoc = new AlarmDoc();
             timer1 = new Timer();
             DatePicker.Value = DateTime.Now;
             timer1.Start();
@@ -46,7 +52,7 @@ namespace AlarmClock
 
             Alarm a = new Alarm(date, time, (int)upDownSnooze.Value, (int)upDownTimes.Value, song, game);
             lbAlarms.Items.Add(a);
-
+            alarmDoc.AddAlarm(a);
         }
         private void btnSetAlarm_Click(object sender, EventArgs e)
         {
@@ -125,12 +131,39 @@ namespace AlarmClock
             if (selected != null) {
                 setAlarm();
                 lbAlarms.Items.Remove(selected);
+                alarmDoc.RemoveAlarm(selected);
             }
 
         }
 
-        private void DatePicker_ValueChanged(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
+            if (fileName == null)
+            {
+                SaveFileDialog dialog = new SaveFileDialog();
+                dialog.Filter = "Alams| *.al";
+                dialog.Title = "Save your created alarms";
+
+                if (dialog.ShowDialog() == DialogResult.OK)
+                {
+                    fileName = dialog.FileName;
+                }
+            }
+
+            try
+            {
+                using (FileStream stream = new FileStream(fileName, FileMode.Create))
+                {
+                    var formatter = new BinaryFormatter();
+                    formatter.Serialize(stream, (AlarmDoc) alarmDoc);
+                    fileName = null;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error while saving the file");
+            }
+
 
         }
     }

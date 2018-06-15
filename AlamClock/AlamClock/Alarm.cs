@@ -9,6 +9,7 @@ using System.Globalization;
 
 namespace AlarmClock
 {
+    [Serializable]
     public class Alarm
     {
         public String Date { set; get; }
@@ -78,10 +79,6 @@ namespace AlarmClock
 
         public void start()
         {
-            if(Game == 0)
-            {
-                
-            }
 
             if (Game == 1)
             {

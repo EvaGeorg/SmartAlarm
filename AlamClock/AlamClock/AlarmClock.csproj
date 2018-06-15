@@ -61,17 +61,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Alarm.cs" />
+    <Compile Include="AlarmDoc.cs" />
     <Compile Include="AnswerQuestion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AnswerQuestion.Designer.cs">
       <DependentUpon>AnswerQuestion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ChangeAlarm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChangeAlarm.Designer.cs">
-      <DependentUpon>ChangeAlarm.cs</DependentUpon>
     </Compile>
     <Compile Include="Difficulty.cs">
       <SubType>Form</SubType>
@@ -137,9 +132,6 @@
     </Compile>
     <EmbeddedResource Include="AnswerQuestion.resx">
       <DependentUpon>AnswerQuestion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChangeAlarm.resx">
-      <DependentUpon>ChangeAlarm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Difficulty.resx">
       <DependentUpon>Difficulty.cs</DependentUpon>
