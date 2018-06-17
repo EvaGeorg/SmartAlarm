@@ -143,16 +143,9 @@ namespace AlarmClock
 
         public override string ToString()
         {
-            //throws exception here !
-
-            //no exception -- has problem with provider still -- change is temporary untill better solution is found
+            
             DateTime dateTime = DateTime.ParseExact(Date, "dd/MM/yyyy", CultureInfo.InvariantCulture);
-            // this one works perfect for me :D
-
-            //DateTime dateTime = DateTime.Parse(Date);
-            // System.FormatException: 'String was not recognized as a valid DateTime.'
-
-
+          
             String dayOfWeek = dateTime.ToString("dddd");
             // String off_on = Done == true ? " - OFF" : " - ON";
             return String.Format(Time + ", " + dayOfWeek + " " + Date);

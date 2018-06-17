@@ -106,9 +106,5 @@ namespace AlarmClock
             }
         }
 
-        private void Pacman_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
