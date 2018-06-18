@@ -54,8 +54,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.btnOpen = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
             this.eat = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.upDownMinutes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.upDownHours)).BeginInit();
@@ -206,10 +204,10 @@
             this.lbAlarms.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lbAlarms.FormattingEnabled = true;
             this.lbAlarms.ItemHeight = 20;
-            this.lbAlarms.Location = new System.Drawing.Point(548, 195);
+            this.lbAlarms.Location = new System.Drawing.Point(548, 200);
             this.lbAlarms.Name = "lbAlarms";
             this.lbAlarms.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.lbAlarms.Size = new System.Drawing.Size(320, 184);
+            this.lbAlarms.Size = new System.Drawing.Size(320, 244);
             this.lbAlarms.TabIndex = 10;
             this.lbAlarms.SelectedIndexChanged += new System.EventHandler(this.lbAlarms_SelectedIndexChanged);
             // 
@@ -364,32 +362,6 @@
             this.label8.TabIndex = 22;
             this.label8.Text = "Change the alarm setting in the current form or remove it";
             // 
-            // btnOpen
-            // 
-            this.btnOpen.BackColor = System.Drawing.Color.DarkCyan;
-            this.btnOpen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold);
-            this.btnOpen.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnOpen.Location = new System.Drawing.Point(787, 396);
-            this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(81, 31);
-            this.btnOpen.TabIndex = 23;
-            this.btnOpen.Text = "Open";
-            this.btnOpen.UseVisualStyleBackColor = false;
-            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.DarkCyan;
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold);
-            this.btnSave.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSave.Location = new System.Drawing.Point(698, 396);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(83, 31);
-            this.btnSave.TabIndex = 24;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
             // eat
             // 
             this.eat.AutoSize = true;
@@ -412,8 +384,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(882, 456);
             this.Controls.Add(this.eat);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.btnOpen);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -473,8 +443,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Button btnOpen;
-        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.RadioButton eat;
     }
 }

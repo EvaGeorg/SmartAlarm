@@ -41,7 +41,7 @@
             this.wordQuessMorning.BackColor = System.Drawing.Color.White;
             this.wordQuessMorning.Font = new System.Drawing.Font("Bahnschrift SemiBold", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wordQuessMorning.ForeColor = System.Drawing.Color.Teal;
-            this.wordQuessMorning.Location = new System.Drawing.Point(190, 80);
+            this.wordQuessMorning.Location = new System.Drawing.Point(169, 77);
             this.wordQuessMorning.Name = "wordQuessMorning";
             this.wordQuessMorning.Size = new System.Drawing.Size(121, 48);
             this.wordQuessMorning.TabIndex = 0;
