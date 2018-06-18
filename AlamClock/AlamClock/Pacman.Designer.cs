@@ -28,7 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Pacman
             // 
@@ -37,12 +43,14 @@
             this.ClientSize = new System.Drawing.Size(459, 300);
             this.Name = "Pacman";
             this.Text = "Packman";
-            this.Load += new System.EventHandler(this.Pacman_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Pacman_Paint);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Packman_KeyUp);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer timer1;
     }
 }
