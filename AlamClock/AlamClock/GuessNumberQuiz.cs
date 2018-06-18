@@ -46,16 +46,21 @@ namespace AlarmClock
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(Number == int.Parse(guessBox.Text.Trim())) DialogResult = DialogResult.OK;
+            if (guessBox.Text.Trim().Length == 0) MessageBox.Show("Try to guess the number!");
+
             else
             {
-                if(Number < int.Parse(guessBox.Text.Trim()))
-                {
-                    MessageBox.Show("The secret number is smaller than your guess!");
-                }
+                if (Number == int.Parse(guessBox.Text.Trim())) DialogResult = DialogResult.OK;
                 else
                 {
-                    MessageBox.Show("The secret number is greater than your guess!");
+                    if (Number < int.Parse(guessBox.Text.Trim()))
+                    {
+                        MessageBox.Show("The secret number is smaller than your guess!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("The secret number is greater than your guess!");
+                    }
                 }
             }
         }

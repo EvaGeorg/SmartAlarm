@@ -16,13 +16,10 @@ namespace AlarmClock
 {
     public partial class Form1 : Form
     {
-
-        private String FileName;
         private AlarmDoc alarmDoc;
         public Form1()
         {   
             InitializeComponent();
-            FileName = null;
             alarmDoc = new AlarmDoc();
             timer1 = new Timer();
             DatePicker.Value = DateTime.Now;
