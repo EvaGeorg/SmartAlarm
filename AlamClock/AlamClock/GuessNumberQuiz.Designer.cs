@@ -36,8 +36,9 @@
             // 
             // guessBtn
             // 
-            this.guessBtn.BackColor = System.Drawing.Color.Transparent;
-            this.guessBtn.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guessBtn.BackColor = System.Drawing.Color.Salmon;
+            this.guessBtn.Font = new System.Drawing.Font("Bahnschrift SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guessBtn.ForeColor = System.Drawing.Color.White;
             this.guessBtn.Location = new System.Drawing.Point(12, 129);
             this.guessBtn.Name = "guessBtn";
             this.guessBtn.Size = new System.Drawing.Size(346, 45);
@@ -58,11 +59,11 @@
             // guessBox
             // 
             this.guessBox.BackColor = System.Drawing.Color.White;
-            this.guessBox.Font = new System.Drawing.Font("Bahnschrift SemiBold", 21F, System.Drawing.FontStyle.Bold);
+            this.guessBox.Font = new System.Drawing.Font("Bahnschrift SemiBold", 20F, System.Drawing.FontStyle.Bold);
             this.guessBox.ForeColor = System.Drawing.Color.Teal;
             this.guessBox.Location = new System.Drawing.Point(12, 71);
             this.guessBox.Name = "guessBox";
-            this.guessBox.Size = new System.Drawing.Size(346, 41);
+            this.guessBox.Size = new System.Drawing.Size(346, 40);
             this.guessBox.TabIndex = 4;
             // 
             // GuessNumberQuiz

@@ -19,7 +19,8 @@ namespace AlarmClock
         {
             InitializeComponent();
             this.ControlBox = false;
-
+            guessLabel.ForeColor = Color.White;
+            guessLabel.BackColor = Color.Transparent;
             Random random = new Random();
 
             if (Difficulty.Mode == 0)

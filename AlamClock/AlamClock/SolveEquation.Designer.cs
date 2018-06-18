@@ -71,6 +71,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Bahnschrift SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Teal;
             this.label4.Location = new System.Drawing.Point(197, 43);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(22, 25);
@@ -102,6 +103,7 @@
             // 
             this.resultUser.BackColor = System.Drawing.Color.White;
             this.resultUser.Font = new System.Drawing.Font("Bahnschrift SemiBold", 18F, System.Drawing.FontStyle.Bold);
+            this.resultUser.ForeColor = System.Drawing.Color.Teal;
             this.resultUser.Location = new System.Drawing.Point(12, 166);
             this.resultUser.Name = "resultUser";
             this.resultUser.Size = new System.Drawing.Size(168, 36);
@@ -109,7 +111,7 @@
             // 
             // okBtn
             // 
-            this.okBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.okBtn.BackColor = System.Drawing.Color.Salmon;
             this.okBtn.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.okBtn.ForeColor = System.Drawing.Color.White;
             this.okBtn.Location = new System.Drawing.Point(202, 166);

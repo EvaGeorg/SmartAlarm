@@ -17,12 +17,12 @@ namespace AlarmClock
     public partial class Form1 : Form
     {
 
-        private String fileName;
+        private String FileName;
         private AlarmDoc alarmDoc;
         public Form1()
         {   
             InitializeComponent();
-            fileName = null;
+            FileName = null;
             alarmDoc = new AlarmDoc();
             timer1 = new Timer();
             DatePicker.Value = DateTime.Now;
@@ -142,25 +142,25 @@ namespace AlarmClock
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (fileName == null)
+            if (FileName == null)
             {
                 SaveFileDialog dialog = new SaveFileDialog();
-                dialog.Filter = "Alams| *.al";
+                dialog.Filter = "Alams | *.al";
                 dialog.Title = "Save your created alarms";
 
                 if (dialog.ShowDialog() == DialogResult.OK)
                 {
-                    fileName = dialog.FileName;
+                    FileName = dialog.FileName;
                 }
             }
 
             try
             {
-                using (FileStream stream = new FileStream(fileName, FileMode.Create))
+                using (FileStream stream = new FileStream(FileName, FileMode.Create))
                 {
                     var formatter = new BinaryFormatter();
                     formatter.Serialize(stream, (AlarmDoc) alarmDoc);
-                    fileName = null;
+                    FileName = null;
                 }
             }
             catch (Exception ex)
@@ -182,24 +182,25 @@ namespace AlarmClock
 
         private void btnOpen_Click(object sender, EventArgs e)
         {
-            if (fileName == null)
+            if (FileName == null)
             {
                 OpenFileDialog dialog = new OpenFileDialog();
-                dialog.Filter = "Alams| *.al";
+                dialog.Filter = "Alams | *.al";
                 dialog.Title = "Open your saved alarms";
 
                 if (dialog.ShowDialog() == DialogResult.OK)
                 {
-                    fileName = dialog.FileName;
+                    FileName = dialog.FileName;
                 }
             }
 
             try
             {
-                using (FileStream stream = new FileStream(fileName, FileMode.Open))
+                using (FileStream stream = new FileStream(FileName, FileMode.Open))
                 {
                     var formatter = new BinaryFormatter();
                     alarmDoc = (AlarmDoc)formatter.Deserialize(stream);
+                    FileName = null;
                     fillAlarms();
                 }
             }
@@ -207,8 +208,6 @@ namespace AlarmClock
             {
                 MessageBox.Show("Error while opening the file");
             }
-            fileName = null;
-
         }
         
       

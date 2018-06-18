@@ -218,7 +218,7 @@
             this.btnRemove.BackColor = System.Drawing.Color.DarkCyan;
             this.btnRemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemove.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnRemove.Location = new System.Drawing.Point(558, 130);
+            this.btnRemove.Location = new System.Drawing.Point(548, 142);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(140, 34);
             this.btnRemove.TabIndex = 11;
@@ -231,7 +231,7 @@
             this.btnChange.BackColor = System.Drawing.Color.DarkCyan;
             this.btnChange.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChange.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnChange.Location = new System.Drawing.Point(728, 130);
+            this.btnChange.Location = new System.Drawing.Point(728, 142);
             this.btnChange.Name = "btnChange";
             this.btnChange.Size = new System.Drawing.Size(140, 34);
             this.btnChange.TabIndex = 12;

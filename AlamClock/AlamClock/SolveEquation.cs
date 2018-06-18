@@ -21,8 +21,11 @@ namespace AlarmClock
             this.ControlBox = false;
             startQuiz();
             op.BackColor = Color.White;
+            op.ForeColor = Color.Teal;
             num1.BackColor = Color.White;
+            num1.ForeColor = Color.Teal;
             num2.BackColor = Color.White;
+            num2.ForeColor = Color.Teal;
 
 
         }

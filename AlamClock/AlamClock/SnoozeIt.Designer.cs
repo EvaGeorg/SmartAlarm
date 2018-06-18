@@ -60,6 +60,9 @@
             this.snooze.UseVisualStyleBackColor = false;
             this.snooze.Click += new System.EventHandler(this.snooze_Click);
             // 
+            // backgroundWorker1
+            // 
+            // 
             // SnoozeIt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
